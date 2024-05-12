@@ -1,11 +1,20 @@
 {
   "name": "chai-backend",
   "version": "1.0.0",
+  "description": "a backend practice with nodejs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
+  "keywords": [
+    "node",
+    "backend",
+    "javascript"
+  ],
   "author": "\"Yash Singh\"",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
