@@ -16,13 +16,15 @@ const uplodeOnCloudinary = async (localFilePath) => {
       resource_type: "auto"
     })
     console.log("File is uploded on cloudinary", response.url);
+    return response;
+
   } catch (error) {
     fs.unlinkSync(localFilePath)  //remove locally saved temporary file as the uplode operation got failed.
     return null;
   }
 }
 
-export {uplodeOnCloudinary}
+export { uplodeOnCloudinary }
 
 
 // cloudinary.v2.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg",
